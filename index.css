@@ -1,0 +1,324 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+
+
+.header {
+    background-color: #27374d;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.header h1 {
+    margin-bottom: 5px;
+}
+
+.header img {
+    margin: 15px 0;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+nav ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: rosybrown;
+}
+
+
+
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+
+
+
+.section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.section h2 {
+    color: #27374d;
+    margin-bottom: 15px;
+}
+
+
+
+
+.project-list {
+    list-style: none;
+}
+
+.project {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.project h3 {
+    color: #526d82;
+    margin-bottom: 10px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.project a {
+    color: #0077b6;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 5px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    background-color: #27374d;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #536572;
+}
+
+
+
+
+.footer {
+    background-color: #27374d;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+@media screen and (min-width: 1025px) {
+
+    .container {
+        max-width: 1000px;
+        margin: 20px auto;
+    }
+
+    .project-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .project {
+        margin-bottom: 0;
+    }
+
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .project-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .project {
+        padding: 15px;
+        margin-bottom: 0;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+   
+
+    .header {
+        padding: 20px 10px;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .header p {
+        font-size: 0.9rem;
+    }
+
+    .header img {
+        width: 150px;
+    }
+
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav li {
+        margin: 0;
+    }
+
+
+    .container {
+        width: 100%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+
+
+    .section {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .section h2 {
+        font-size: 1.3rem;
+    }
+
+
+    .project-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .project {
+        padding: 15px;
+        margin-bottom: 0;
+    }
+
+    .project h3 {
+        font-size: 1.1rem;
+    }
+
+    .project img {
+        width: 100%;
+    }
+
+
+   
+
+    fieldset {
+        padding: 12px;
+    }
+
+    input, textarea {
+        font-size: 1rem;
+    }
+
+    button {
+        width: 100%;
+    }
+
+
+
+    .footer {
+        padding: 20px 10px;
+        font-size: 0.85rem;
+    }
+
+}
